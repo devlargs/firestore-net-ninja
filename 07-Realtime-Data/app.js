@@ -43,6 +43,11 @@ form.addEventListener("submit", (e) => {
 db.collection("cafes").onSnapshot((snapshot) => {
   let changes = snapshot.docChanges();
   changes.forEach((change) => {
-    // the change variable returns an array with types 'added', 'remove', etc respectively. you just have to conditionally render or delete element based on it
+    if (change.type === "added") {
+      renderCafe(change.doc);
+    } else if (change.type === "removed") {
+      let li = cafeList.querySelector("[data-id=" + change.doc.id + "]");
+      cafeList.removeChild("li");
+    }
   });
 });
