@@ -8,3 +8,5 @@ This is just a test repository for the Net Ninja Playlist Tutorial Im watching a
 
 - Setting up Fire Store
 - Getting Documents
+- Saving Data
+- Deleting Data
