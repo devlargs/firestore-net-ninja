@@ -11,3 +11,4 @@ This is just a test repository for the Net Ninja Playlist Tutorial Im watching a
 - Saving Data
 - Deleting Data
 - Making Queries
+- Ordering Data
